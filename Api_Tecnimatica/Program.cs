@@ -1,15 +1,13 @@
 ﻿var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
 builder.Services.AddControllers();
 
-// 👉 Agregar la política CORS
 var corsPolicyName = "FrontendPolicy";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: corsPolicyName, policy =>
     {
-        policy.WithOrigins("http://localhost:62088") // Puerto actual del frontend
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -17,16 +15,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 app.UseHttpsRedirection();
-
-app.UseCors(corsPolicyName); // 👉 Activar la política CORS
-
+app.UseCors(corsPolicyName);
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
+
 
 
 
