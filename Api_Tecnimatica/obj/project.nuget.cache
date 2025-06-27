@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bhVLxdwlSUw=",
+  "dgSpecHash": "gFy4q38IPE0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\source\\repos\\Api_Tecnimatica\\Api_Tecnimatica\\Api_Tecnimatica.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\OneDrive\\Desktop\\Api_Tecnimatica\\Api_Tecnimatica\\Api_Tecnimatica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
